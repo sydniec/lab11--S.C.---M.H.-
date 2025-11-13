@@ -8,6 +8,13 @@ One function per operation, in order.
 import math
 
 # First example
+def square_root(a):
+    assert a > 0, "ValueError"
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 def add(a, b): 
     return a + b
 
@@ -18,16 +25,14 @@ def multiply(a, b):
     return a *b
 
 def divide(a, b):
-    try:
-        return b / a
-    except ZeroDivisionError as e:
-        return(e)
+    assert a != 0, "ZeroDivisionError"
+    return b / a
 
 def logarithm(a, b):
-    try:
-        return math.log(a, b)
-    except ValueError as e:
-        return(e)
+    assert b > 0, "ValueError"
+    assert a > 0, "ValueError"
+    assert a != 1, "ValueError"
+    return math.log(a, b)
 
 def exponent(a, b):
     return a ** b
