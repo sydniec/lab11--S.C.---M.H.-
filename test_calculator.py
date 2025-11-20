@@ -1,10 +1,11 @@
+# https://github.com/sydniec/lab11--S.C.---M.H.-
+# Partner 1: sydniec
+# Partner 2: Rakibul Hai
+
 import unittest
 import math
 from lab11.calculator import *
 
-# https://github.com/sydniec/lab11--S.C.---M.H.-
-# Partner 1: sydniec
-# Partner 2: Rakibul Hai
 
 
 class TestCalculator(unittest.TestCase):
