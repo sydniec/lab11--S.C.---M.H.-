@@ -7,25 +7,32 @@ One function per operation, in order.
 
 import math
 
-def add(a, b): 
+def add(a, b):
     return a + b
 
-def subtract(a, b):
+def sub(a, b):
     return a - b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
+    """Return b / a. Raise ZeroDivisionError if a == 0."""
     if a == 0:
-        raise ZeroDivisionError
+        raise ZeroDivisionError("division by zero")
     return b / a
 
-def logarithm(a, b):
+def log(a, b):
+    """Return logarithm of b with base a.
+
+    Raise ValueError for invalid base or argument (base <= 0, base == 1, or b <= 0).
+    """
+    if a <= 0 or a == 1:
+        raise ValueError("invalid base for logarithm")
     if b <= 0:
-        raise ValueError
+        raise ValueError("logarithm undefined for non-positive values")
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
 
