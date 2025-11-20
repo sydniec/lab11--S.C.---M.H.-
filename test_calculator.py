@@ -23,21 +23,21 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self):
-        self.assertEqual(multiply(-1, -1), 1)
-        self.assertEqual(multiply(-4, 10), -40)
-        self.assertEqual(multiply(8, 8), 64)
-        self.assertEqual(multiply(18, 0), 0)
+        self.assertEqual(mul(-1, -1), 1)
+        self.assertEqual(mul(-4, 10), -40)
+        self.assertEqual(mul(8, 8), 64)
+        self.assertEqual(mul(18, 0), 0)
 
     def test_divide(self):
-        self.assertAlmostEqual(divide(-1, 1), -1)
-        self.assertAlmostEqual(divide(-8, 64), -8)
-        self.assertAlmostEqual(divide(4, 0), 0)
-        self.assertAlmostEqual(divide(15, 225), 15)
+        self.assertAlmostEqual(div(-1, 1), -1)
+        self.assertAlmostEqual(div(-8, 64), -8)
+        self.assertAlmostEqual(div(4, 0), 0)
+        self.assertAlmostEqual(div(15, 225), 15)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            divide(0, 5)
+            div(0, 5)
 
     def test_logarithm(self): # 3 assertions
         self.assertAlmostEqual(logarithm(10, 100), 2)
