@@ -3,7 +3,6 @@
 # Partner 2: Rakibul Hai
 
 import unittest
-import math
 from lab11.calculator import *
 
 
