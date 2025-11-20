@@ -8,18 +8,13 @@ One function per operation, in order.
 import math
 
 def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError
-        return math.sqrt(a)
-    except:
-        print("Can not calculate the square root of negative numbers.")
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
-    try:
-        return math.hypot(a, b)
-    except:
-        print("Something went wrong.")
+    return math.hypot(a, b)
+
 def add(a, b): 
     return a + b
 
