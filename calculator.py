@@ -1,3 +1,7 @@
+# https://github.com/sydniec/lab11--S.C.---M.H.-
+# Partner 1: sydniec
+# Partner 2: Rakibul Hai
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
